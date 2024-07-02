@@ -50,7 +50,7 @@ Implications for Healthcare Management:
 
 These clusters provide valuable insights into patient demographics, hospital resource allocation, and regional healthcare practices. Understanding these clusters can help tailor hospital management strategies, improve patient care, and optimize resource distribution based on the specific needs of each cluster. For instance, regions with older patients and higher emergency cases might need more intensive care resources, while regions with younger trauma patients might benefit from targeted trauma care facilities and services.
 
-#### 2.1 3D Visualization
+#### 2.1. 3D Visualization
 
 A 3D PCA plot revealed that the clusters are well-separated when considering three principal components axes, highlighting the importance of considering higher dimensions for clustering analysis. This provided a clearer distinction between clusters, especially for Cluster 3.
 ![3D Clustering](images/pca_3d_A1.png)

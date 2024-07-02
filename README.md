@@ -39,7 +39,11 @@ Notable observations:
 #### 2.1 3D Visualization
 
 A 3D PCA plot revealed that the clusters are well-separated when considering three principal components axes, highlighting the importance of considering higher dimensions for clustering analysis. This provided a clearer distinction between clusters, especially for Cluster 3.
-![3D Clustering](images/pca_3d.png)
+![3D Clustering](images/pca_3d_A1.png)
+
+  *Caption: Four distinct clusters visualized in PCA in 3D space, disproving the non-overlapping hypothesis (Angle 1).*
+
+![3D Clustering](images/pca_3d_A2.png)
 
   *Caption: Four distinct clusters visualized in PCA in 3D space, disproving the non-overlapping hypothesis.*
 
@@ -49,7 +53,7 @@ A 3D PCA plot revealed that the clusters are well-separated when considering thr
 #### 3.1 Correlation Analysis
 
 ![General Correlation Matrix](images/correlation.png)
-*Caption: Correlation matrix showing moderate positive correlation (0.35) between Admission Deposit and Length of Stay.*
+*Caption: Correlation matrix showing moderate positive correlation (0.35) between Admission Deposit and Length of Stay (Angle 2).*
 
 The general correlation matrix reveals:
 

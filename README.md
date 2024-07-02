@@ -31,10 +31,23 @@ This report summarizes the exploratory data analysis (EDA) conducted on our heal
 | 2 | Younger patients (31-40), trauma cases, higher admission deposits | 36.90% |
 | 3 | Older patients (41-50), trauma cases, highest patient city codes | 7.59% |
 
-Notable observations:
-- All clusters are in Hospital_type_code 'a' and the Gynecology department.
-- Three clusters (74% of patients) are in region X, with only Cluster 1 (24% of patients) in region Y.
-- All clusters show 'Moderate' Severity of Illness.
+Notable Observations:
+- **Common Characteristics Across Clusters**:
+  - All clusters are in `Hospital_type_code 'a'` and the `Gynecology` department.
+  - All clusters show 'Moderate' `Severity of Illness`.
+
+- **Region Distribution**:
+  - Three clusters (74% of patients) are in `region X`.
+  - Only Cluster 1 (25.73% of patients) is in `region Y`.
+
+- **Cluster-Specific Characteristics**:
+  - **Cluster 0**: Consists of younger patients (31-40) primarily dealing with trauma cases and having moderate extra rooms. This cluster represents 29.78% of the patients.
+  - **Cluster 1**: Includes older patients (41-50) who are mostly emergency cases with fewer extra rooms, located in region Y. This cluster accounts for 25.73% of the patients.
+  - **Cluster 2**: Composed of younger patients (31-40) dealing with trauma cases and characterized by higher admission deposits. This is the largest cluster, representing 36.90% of the patients.
+  - **Cluster 3**: Contains older patients (41-50) dealing with trauma cases and having the highest patient city codes. This is the smallest cluster, making up 7.59% of the patients.
+
+Implications for Healthcare Management
+These clusters provide valuable insights into patient demographics, hospital resource allocation, and regional healthcare practices. Understanding these clusters can help tailor hospital management strategies, improve patient care, and optimize resource distribution based on the specific needs of each cluster. For instance, regions with older patients and higher emergency cases might need more intensive care resources, while regions with younger trauma patients might benefit from targeted trauma care facilities and services.
 
 #### 2.1 3D Visualization
 

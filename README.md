@@ -26,10 +26,10 @@ This report summarizes the exploratory data analysis (EDA) conducted on our heal
 
 | Cluster | Key Characteristics | Size (%) |
 |---------|---------------------|----------|
-| 0 | Younger patients (31-40), trauma cases, moderate extra rooms | 28% |
-| 1 | Older patients (41-50), emergency cases, fewer extra rooms, region Y | 24% |
-| 2 | Younger patients (31-40), trauma cases, higher admission deposits | 26% |
-| 3 | Older patients (41-50), trauma cases, highest patient city codes | 22% |
+| 0 | Younger patients (31-40), trauma cases, moderate extra rooms | 29.78% |
+| 1 | Older patients (41-50), emergency cases, fewer extra rooms, region Y | 25.73% |
+| 2 | Younger patients (31-40), trauma cases, higher admission deposits | 36.90% |
+| 3 | Older patients (41-50), trauma cases, highest patient city codes | 7.59% |
 
 Notable observations:
 - All clusters are in Hospital_type_code 'a' and the Gynecology department.

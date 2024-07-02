@@ -45,7 +45,7 @@ A 3D PCA plot revealed that the clusters are well-separated when considering thr
 
 ![3D Clustering](images/pca_3d_A2.png)
 
-  *Caption: Four distinct clusters visualized in PCA in 3D space, disproving the non-overlapping hypothesis.*
+  *Caption: Four distinct clusters visualized in PCA in 3D space, disproving the non-overlapping hypothesis (Angle 2).*
 
 
 ### 3. Feature Correlations and Multivariate Analysis
@@ -53,7 +53,7 @@ A 3D PCA plot revealed that the clusters are well-separated when considering thr
 #### 3.1 Correlation Analysis
 
 ![General Correlation Matrix](images/correlation.png)
-*Caption: Correlation matrix showing moderate positive correlation (0.35) between Admission Deposit and Length of Stay (Angle 2).*
+*Caption: Correlation matrix showing moderate positive correlation (0.35) between Admission Deposit and Length of Stay.*
 
 The general correlation matrix reveals:
 

@@ -175,8 +175,7 @@ Examining numerical features' relationships with Length of Stay:
 1. Conduct deeper analysis into the Gynecology department's predominance, including Logistic Regression or Multinomial Logistic Regression to predict the probability of patients being assigned to different departments based on their characteristics.
 2. Investigate regional differences, particularly between regions X and Y, using geospatial analysis techniques (DBSCAN, HDBSCAN, SVM, etc).
 3. Develop and test predictive models for length of stay, incorporating machine learning techniques such as neural networks and ensemble methods.
-4. Design and prototype the recommendation system, leveraging natural language processing for improved patient-system interaction.
-5. Explore advanced analytics techniques such as survival analysis for more accurate length of stay predictions and network analysis to understand patient flow patterns.
+4. Design and prototype the recommendation system, leveraging hospital characteristics and patient condition attributes for improved patient-system interaction by recommending which hospital, ward type, department, etc the patient should be stay at for maximum efficiency and optimal length of stay.
 
 ## Conclusion
 

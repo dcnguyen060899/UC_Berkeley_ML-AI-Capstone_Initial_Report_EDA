@@ -62,30 +62,44 @@ A 3D PCA plot revealed that the clusters are well-separated when considering thr
   *Caption: Four distinct clusters visualized in PCA in 3D space, disproving the non-overlapping hypothesis (Angle 2).*
 
 
-### 3. Feature Correlations and Multivariate Analysis
+## Correlation Analysis: Numerical Features vs. Full Dataset
 
-#### 3.1 Correlation Analysis
+![Correlation Matrix of Numerical Features](images/correlation_cluster.png)
+*Figure 1: Correlation matrix of numerical features, highlighting relationship between City_Code_Patient and cluster assignment (r = 0.4).*
 
-![General Correlation Matrix](images/correlation.png)
-*Caption: Correlation matrix showing moderate positive correlation (0.35) between Admission Deposit and Length of Stay.*
+### Key Correlations (Numerical Features)
 
-The general correlation matrix reveals:
+- **case_id (Length of Stay)**: Weak correlations overall (|r| < 0.07)
+- **Hospital_code & City_Code_Hospital**: Weak positive (r = 0.13)
+- **Available Extra Rooms**:
+  - With Cluster: Moderate negative (r = -0.44)
+  - With Admission_Deposit: Weak negative (r = -0.14)
+- **City_Code_Patient & Cluster**: Moderate positive (r = 0.4)
+- **Admission_Deposit & Cluster**: Moderate positive (r = 0.32)
 
-- Positive correlations with Length of Stay:
-  - Admission Deposit (moderate correlation, r = 0.35)
-  - Visitors with Patient (weak to moderate correlation, r = 0.22)
+![Detailed Correlation Matrix](images/correlation.png)
+*Figure 2: Comprehensive correlation matrix showing relationships across all variables in the dataset.*
 
-- Negative correlation with Length of Stay:
-  - Available Extra Rooms in Hospital (weak correlation, r = -0.15)
+### Additional Insights (Full Dataset)
 
-![Cluster-Specific Correlation Matrix](images/correlation_cluster.png)
-*Caption: Cluster-specific correlations highlighting strong relationship (0.78) between City_Code_Patient and cluster assignment.*
+1. **Hospital_type_code**: 
+   - Strong positive with Hospital_code (r > 0.7)
+   - Moderate positive with Ward_Facility_Code variables
+2. **City_Code_Hospital**: Strong positive with Hospital_region_code (r > 0.7)
+3. **Department variables**: Inter-correlations present
+4. **Ward_Type variables**: Inter-correlations suggest relationships
+5. **Age variables**: Strong negative correlations between groups
 
-The cluster-specific correlation matrix shows:
+### Key Findings
 
-- Strong correlation between City_Code_Patient and cluster assignment (r = 0.78), suggesting geographical patterns in patient groupings
-- Negative correlation between Available Extra Rooms and cluster assignment (r = -0.42), indicating its importance in defining patient groups
+1. Clustering influenced by patient location, hospital capacity, and financial factors
+2. Hospital characteristics strongly interrelated
+3. Geographic factors significant in hospital differentiation
+4. Length of stay weakly correlated with most variables
+5. Hospital structure and patient demographics revealed in detailed matrix
+6. Clustering more influenced by administrative/geographic factors than medical/stay duration
 
+This analysis highlights complex relationships between hospital characteristics, patient factors, and administrative considerations in the healthcare dataset.
 #### 3.2 Multivariate Categorical Analysis
 
 ![Multivariate Analysis - Categorical Features](images/multivariate_cat.png)

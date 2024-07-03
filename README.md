@@ -61,45 +61,43 @@ A 3D PCA plot revealed that the clusters are well-separated when considering thr
 
   *Caption: Four distinct clusters visualized in PCA in 3D space, disproving the non-overlapping hypothesis (Angle 2).*
 
-
 ## Correlation Analysis: Numerical Features vs. Full Dataset
 
 ![Correlation Matrix of Numerical Features](images/correlation_cluster.png)
-*Figure 1: Correlation matrix of numerical features, highlighting relationship between City_Code_Patient and cluster assignment (r = 0.4).*
+*Figure 1: Correlation matrix of numerical features, highlighting relationships with cluster assignments.*
 
-### Key Correlations (Numerical Features)
-
-- **case_id (Length of Stay)**: Weak correlations overall (|r| < 0.07)
-- **Hospital_code & City_Code_Hospital**: Weak positive (r = 0.13)
-- **Available Extra Rooms**:
-  - With Cluster: Moderate negative (r = -0.44)
-  - With Admission_Deposit: Weak negative (r = -0.14)
-- **City_Code_Patient & Cluster**: Moderate positive (r = 0.4)
-- **Admission_Deposit & Cluster**: Moderate positive (r = 0.32)
+### Key Correlations with Cluster
+- **Available Extra Rooms in Hospital**: Strong negative correlation (r = -0.44)
+- **City_Code_Patient**: Moderate positive correlation (r = 0.4)
+- **Admission_Deposit**: Moderate positive correlation (r = 0.32)
+- **Visitors with Patient**: Weak negative correlation (r = -0.25)
+- **Bed Grade**: Weak positive correlation (r = 0.2)
+- **City_Code_Hospital**: Weak negative correlation (r = -0.18)
+- **Hospital_code**: Weak positive correlation (r = 0.13)
 
 ![Detailed Correlation Matrix](images/correlation.png)
 *Figure 2: Comprehensive correlation matrix showing relationships across all variables in the dataset.*
 
 ### Additional Insights (Full Dataset)
-
 1. **Hospital_type_code**: 
-   - Strong positive with Hospital_code (r > 0.7)
-   - Moderate positive with Ward_Facility_Code variables
-2. **City_Code_Hospital**: Strong positive with Hospital_region_code (r > 0.7)
-3. **Department variables**: Inter-correlations present
-4. **Ward_Type variables**: Inter-correlations suggest relationships
-5. **Age variables**: Strong negative correlations between groups
+   - Strong correlations with Ward_Facility_Code variables
+   - Moderate to strong negative correlations between different Hospital_type_code variables
+2. **City_Code_Hospital**: Moderate positive with Hospital_region_code_Y (r = 0.22)
+3. **Department variables**: Strong negative inter-correlations
+4. **Ward_Type variables**: Moderate to strong negative inter-correlations
+5. **Age variables**: Strong negative correlations between adjacent age groups
 
 ### Key Findings
+1. Clustering is strongly influenced by hospital capacity, patient location, and financial factors
+2. Hospital characteristics (type, facility codes) are strongly interrelated
+3. Geographic factors show moderate influence on clustering and hospital differentiation
+4. Length of stay (case_id) is weakly correlated with most variables, including cluster assignments
+5. Hospital structure (departments, ward types) shows clear patterns of mutual exclusivity
+6. Patient demographics (age groups) reveal expected negative correlations between groups
+7. Visitor numbers and bed grade have weak but noticeable correlations with cluster assignments
 
-1. Clustering influenced by patient location, hospital capacity, and financial factors
-2. Hospital characteristics strongly interrelated
-3. Geographic factors significant in hospital differentiation
-4. Length of stay weakly correlated with most variables
-5. Hospital structure and patient demographics revealed in detailed matrix
-6. Clustering more influenced by administrative/geographic factors than medical/stay duration
+This analysis highlights complex relationships between hospital characteristics, patient factors, and administrative considerations in the healthcare dataset. The clustering appears to be more influenced by administrative, geographic, and capacity factors than by medical or length-of-stay variables.
 
-This analysis highlights complex relationships between hospital characteristics, patient factors, and administrative considerations in the healthcare dataset.
 #### 3.2 Multivariate Categorical Analysis
 
 ![Multivariate Analysis - Categorical Features](images/multivariate_cat.png)

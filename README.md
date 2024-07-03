@@ -162,7 +162,7 @@ Examining numerical features' relationships with Length of Stay:
 
 3. **Predictive Modeling Strategy**:
    - Employ ensemble methods (Random Forest, Gradient Boosting, XGBoost) to capture complex interactions observed in the multivariate analysis.
-   - Utilize SHAP and Partial Dependence Plots for model interpretability, especially for understanding the impact of key features like Severity of Illness and Type of Admission.
+   - Utilize Partial Dependence Plots for model interpretability, especially for understanding the impact of key features like Severity of Illness and Type of Admission.
    - Business Impact: Accurate predictive models could improve bed management efficiency by better anticipating length of stay based on patient characteristics. This could potentially reduce wait times and optimize staff scheduling, particularly for hospitals with limited extra rooms.
 
 4. **Recommendation System Development**:
@@ -172,8 +172,8 @@ Examining numerical features' relationships with Length of Stay:
 
 ## Next Steps
 
-1. Conduct deeper analysis into the Gynecology department's predominance, including time series analysis to identify trends over time.
-2. Investigate regional differences, particularly between regions X and Y, using geospatial analysis techniques.
+1. Conduct deeper analysis into the Gynecology department's predominance, including Logistic Regression or Multinomial Logistic Regression to predict the probability of patients being assigned to different departments based on their characteristics.
+2. Investigate regional differences, particularly between regions X and Y, using geospatial analysis techniques (DBSCAN, HDBSCAN, SVM, etc).
 3. Develop and test predictive models for length of stay, incorporating machine learning techniques such as neural networks and ensemble methods.
 4. Design and prototype the recommendation system, leveraging natural language processing for improved patient-system interaction.
 5. Explore advanced analytics techniques such as survival analysis for more accurate length of stay predictions and network analysis to understand patient flow patterns.
